@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    
+    <!-- Local Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <div class="card shadow p-4">
+            <h1 class="text-center text-primary">Feedback Form</h1>
+            <form action="#" class="mt-3">
+                
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name (Optional):</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email (Optional):</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone (Optional):</label>
+                    <input type="tel" class="form-control" id="phone" name="phone">
+                </div>
+
+                <div class="mb-3">
+                    <label for="rating" class="form-label">Rating:</label>
+                    <select id="rating" name="rating" class="form-select">
+                        <option value="1">1 - Very Bad</option>
+                        <option value="2">2 - Bad</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="question" class="form-label">Any Questions regarding the product or service:</label>
+                    <textarea id="question" name="question" class="form-control" rows="4" placeholder="Ask your question here..."></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="comments" class="form-label">Additional Comments (Optional):</label>
+                    <textarea id="comments" name="comments" class="form-control" rows="4" placeholder="Leave a comment..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Local Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
